@@ -1,0 +1,6 @@
+<template name="footer">
+这是底部组件1。。。。{{text}}
+</template>
+<template name="footer1">
+这是底部组件2。。。。
+</template>

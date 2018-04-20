@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",        
+    "pages/express/express",
+    "pages/firstPage/first",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dadada",
+    "selectedColor": "#09bb07",
+    "backgroundColor": "#000",
+    "borderStyle": "#f6f6f6",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"",
+      "selectedIconPath":""
+    },{
+    "pagePath": "pages/express/express",
+    "text": "运单编号查询页",
+    "iconPath": "",
+    "selectedIconPath":""
+    }]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":false
+}

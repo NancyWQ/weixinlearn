@@ -1,0 +1,11 @@
+<view class="title">
+<view class="title">这是运单号的查询demo</view>
+<input placeholder='请输入运单号' bindinput='input' value="{{express}}"></input>
+<scroll-view>
+<view wx:for="{{expressInfo}}" style='height:100px;'>{{item.time}}:{{item.context}}</view>
+</scroll-view>
+<view>
+<button type="primary" size="mini"  bindtap="btnSearch" style="margin-right:10px">查询</button>
+<button type="primary" size="mini"  bindtap="btnReset">重置</button>
+</view>
+</view>

@@ -1,0 +1,20 @@
+<include src="../templates/header"/>
+<button type="default" bindtap="default" hover-class="other-button-hover"> default </button>
+<button type="primary"  bindtap="primary"> primary </button>
+
+<text>这是数据绑定</text>
+<text>{{text}}</text>
+
+<button type="primary"   bindtap="btnClick"> {{btn}} </button>
+<view>this is wx:if</view>
+<button type="primary" bindtap='wxIf'>wx:if</button>
+<view wx:if="{{isShow}}">{{text}}</view>
+
+<view>这是循环wx:for</view>
+<view wx:for="{{['a','b','c']}}">这是循环的第一个测试</view>
+<view wx:for="{{['a','b','c']}}">{{item}}</view>
+<view wx:for="{{['a','b','c']}}">{{item}}{{index}}</view>
+
+<view wx:for="{{news}}">{{item}}</view>
+<import src="../templates/footer"/>
+<template is="footer" data="{{text:'导入设置'}}"/>
