@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    userName:"",
+    userPassword:"",
   },
 
   /**
@@ -26,16 +27,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(app.userInfo);
-    if (!app.userInfo.useName) {
-      wx.redirectTo({
-        url: '../login/login',
-      })
-    }else{
-      wx.redirectTo({
-        url: '../user/user',
-      })
-    }
+    
   },
 
   /**
@@ -71,5 +63,27 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  userName:function(event){
+    console.log(event);
+this.setData({
+  userName:event.detail.value
+})
+  },
+  userPassword:function(event){
+    this.setData({
+      userPassword: event.detail.value
+    })
+  },
+  login:function(){
+    console.log(this.data.userName);
+    //if(this.data.userName!=null&&this.data.userPassword!=null){
+      app.userInfo.userName=this.data.userName;
+      console.log(app.userInfo);
+      wx.navigateTo({
+        url: '../../index/index',
+      })
+      console.log(1);
+    //}
   }
 })

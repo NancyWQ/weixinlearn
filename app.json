@@ -6,7 +6,8 @@
     "pages/express/express",
     "pages/firstPage/first",
     "pages/logs/logs",
-    "pages/login/user/user"
+    "pages/login/user/user",
+    "pages/login/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
