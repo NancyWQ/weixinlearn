@@ -2,10 +2,10 @@
 var appConfig = {
   onLaunch: function () {
     // 展示本地存储能力
+    console.log('onLaunch');
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     // 登录
     wx.login({
       success: res => {
@@ -33,8 +33,17 @@ var appConfig = {
       }
     })
   },
+  onShow:function(){
+    console.log('onShow');
+  },
+  onHide:function(){
+    console.log('onHide');
+  },
   globalData: {
     userInfo: null
+  },
+  myData:{
+    test:"Hello WQ"
   }
 };
 App(appConfig);

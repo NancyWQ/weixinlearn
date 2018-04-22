@@ -1,9 +1,12 @@
 {
   "pages": [
-    "pages/index/index",        
+    "pages/index/index",
+    "pages/pagesNav/pagesNav",
+    "pages/pageDetail/pageDetail",
     "pages/express/express",
     "pages/firstPage/first",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/login/user/user"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,7 +29,13 @@
     "text": "运单编号查询页",
     "iconPath": "",
     "selectedIconPath":""
-    }]
+    },{
+      "pagePath": "pages/login/user/user",
+      "text": "用户中心",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }
+    ]
   },
   "networkTimeout": {
     "request": 20000,

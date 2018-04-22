@@ -1,0 +1,10 @@
+<view>这是页面跳转</view>
+<view bindtap='itemNav'>
+<view>这是文档1</view>
+<view>这是文档2</view>
+<view>这是文档3</view>
+<view>这是文档4</view>
+</view>
+<navigator url="../pageDetail/pageDetail?id=100">
+<view>这是用navigator的组件的跳转</view>
+</navigator>
