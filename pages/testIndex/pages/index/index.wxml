@@ -1,0 +1,36 @@
+<!--pages/testIndex/pages/index/index.wxml-->
+<scroll-view scroll-y>
+  <view>
+    <view>
+      <swiper indicator-dots='{{true}}' autoplay='true' indicator-color='#fff' interval='{{3000}}'        
+      indicator-active-color='#ddd'>
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view>
+      <view class="flex header">
+        <text>精品推荐</text>
+        <navigator url="../notFound/notFound">全部精品</navigator>
+      </view>
+      <view class="content">
+      <block wx:for="{{fine}}" wx:key="index">
+        <view class="contentItem">
+        <image src="{{item.url}}" 
+        style="width:100%;height:100%;"></image>
+        <text>{{item.title}}</text>
+        </view>
+      </block>
+      </view>
+    </view>
+     <view>
+      <view class="flex header">
+      <text>热门评测</text>
+      <navigator url="../notFound/notFound">全部评测</navigator>
+      </view>
+    </view>
+  </view>
+</scroll-view>

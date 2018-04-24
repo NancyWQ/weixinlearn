@@ -1,0 +1,39 @@
+/* pages/testIndex/pages/index/index.wxss */
+.flex{
+  display: flex;
+  justify-content: space-between
+}
+.header>text{
+  border-left:3px solid #AABFBB;
+  padding-left:10px;
+  font-weight: bold;
+}
+.header>navigator{
+font-size: 14px;
+color:#9AD0A6;
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contentItem{
+  width:50%;
+  height:300rpx;
+  padding-left:2%;
+  padding-bottom:2%;
+  box-sizing:border-box;
+  position: relative;
+}
+.contentItem>text{
+  width:97%;
+  position: absolute;
+   bottom:0px;
+  left:0px; 
+  background: #000;
+  opacity: 0.5;
+  color: #fff;
+  box-sizing: border-box;
+  margin-left: 2%;
+  margin-bottom: 3%;
+}

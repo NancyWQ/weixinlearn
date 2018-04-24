@@ -1,12 +1,10 @@
-var app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userName:"",
-    userPassword:"",
+    
   },
 
   /**
@@ -63,23 +61,5 @@ Page({
    */
   onShareAppMessage: function () {
     
-  },
-  userName:function(event){
-    this.setData({
-      userName:event.detail.value
-    })
-  },
-  userPassword:function(event){
-    this.setData({
-      userPassword: event.detail.value
-    })
-  },
-  loginBtnClick: function () {
-    // 用户名和密码验证的过程
-    app.myData.userInfo = {userName: this.data.userName, userPassword: this.data.passWord }
-    // 应该使用switchTab跳转，不应该使用navigateTo跳转
-    wx.switchTab({
-      url: "../user/user" ,
-    })
-  },
+  }
 })

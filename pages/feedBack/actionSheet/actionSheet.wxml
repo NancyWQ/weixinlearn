@@ -1,0 +1,10 @@
+<view>这是一个操作反馈组件 action-sheet</view>
+<view style='display:flex'>
+<button size="mini" type="primary" bindtap='click'>弹出action-sheet</button>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for-items="{{actionSheetItems}}" wx:key="item">
+        <action-sheet-item class="item" bindtap="binditem" data-id="{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+</view>

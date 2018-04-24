@@ -7,4 +7,4 @@
 <text>密码：</text>
 <input type='password' bindinput="userPassword"></input>
 </view>
-<button bindtap='login'>登录</button>
+<button bindtap='loginBtnClick'>登录</button>

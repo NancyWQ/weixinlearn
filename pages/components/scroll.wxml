@@ -1,0 +1,10 @@
+<view>
+<scroll-view style="height:200rpx" scroll-y bindscrolltoupper="scrollToUpper"
+bindscrolltolower="scrollToLower"
+scroll-into-view="yellow">
+    <view id="green" class="scroll-view-item bc_green">1</view>
+    <view id="red"  class="scroll-view-item bc_red">2</view>
+    <view id="yellow" class="scroll-view-item bc_yellow">3</view>
+    <view id="blue" class="scroll-view-item bc_blue">4</view>
+</scroll-view>
+</view>

@@ -1,0 +1,7 @@
+<view>这是模态框</view>
+<view style="display:flex">
+<button type="primary" bindtap='click' >出现模态框</button>
+<modal hidden='{{isHidden}}' bindconfirm="confirm" bindcancel="cancel" confirm-text="添加">
+这是一个测试的模态框
+</modal>
+</view>

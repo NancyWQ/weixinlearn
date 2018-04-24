@@ -1,0 +1,5 @@
+<view>这是loading</view>
+<view style="display:flex">
+<button type="primary" bindtap='click' >loading测试</button>
+<loading hidden='{{isHidden}}'>加载中</loading>
+</view>

@@ -1,1 +1,2 @@
 <view>这是用户信息页 必须登录以后才可以查看</view>
+<view>这是登录后的用户名{{userName}}</view>

@@ -1,0 +1,6 @@
+/* pages/components/scroll.wxss */
+.scroll-view-item{
+  width:100rpx;
+  height: 100rpx;
+  background: red;
+}

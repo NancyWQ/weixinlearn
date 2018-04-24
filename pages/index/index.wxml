@@ -3,7 +3,10 @@
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <navigator url='../logs/logs'>
+    <!--或者可以用wx.navigatorAPI  -->
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </navigator>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>

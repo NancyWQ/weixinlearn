@@ -5,14 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    userName:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log('onLoadUser');
+    if (app.myData.userInfo==null) {
+      wx.redirectTo({
+        url: '../login/login',
+      })
+    }else{
+      console.log(app.myData.userInfo);
+      this.setData({
+        userName: app.myData.userInfo.userName
+      })
+    }
   },
 
   /**
@@ -26,23 +36,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(app.userInfo);
-    if (!app.userInfo.useName) {
-      wx.redirectTo({
-        url: '../login/login',
-      })
-    }else{
-      wx.redirectTo({
-        url: '../user/user',
-      })
-    }
+    console.log('onShowUser')
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+    console.log('onHideUser');
   },
 
   /**

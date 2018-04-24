@@ -1,6 +1,15 @@
 {
   "pages": [
+    "pages/testIndex/pages/index/index",
+    "pages/testIndex/pages/notFound/notFound",
     "pages/index/index",
+    "pages/map/map",
+    "pages/feedBack/loading/loading",
+    "pages/feedBack/toast/toast",
+    "pages/feedBack/modal/model",
+    "pages/feedBack/actionSheet/actionSheet",
+    "pages/components/scroll",
+    "pages/components/swiper",
     "pages/pagesNav/pagesNav",
     "pages/pageDetail/pageDetail",
     "pages/express/express",
@@ -12,7 +21,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "weChat",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

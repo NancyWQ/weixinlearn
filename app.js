@@ -43,11 +43,10 @@ var appConfig = {
     userInfo: null
   },
   myData:{
-    test:"Hello WQ"
+    test:"Hello WQ",
+    userInfo: null,
   },
   // 用户登录信息
-  userInfo:{
-    userName:null,
-  },
+  
 };
 App(appConfig);

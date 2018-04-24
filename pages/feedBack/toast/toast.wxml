@@ -1,0 +1,5 @@
+<view>这是toast</view>
+<view style="display:flex">
+<button type="primary" bindtap='click'>显示toast</button>
+<toast hidden="{{isHidden}}" duration="1000" bindchange="change">toast</toast>
+</view>

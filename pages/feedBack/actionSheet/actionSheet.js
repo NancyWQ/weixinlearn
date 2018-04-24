@@ -1,14 +1,27 @@
-var app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
+  // true为不显示
   data: {
-    userName:"",
-    userPassword:"",
+    actionSheetHidden:true,
+    actionSheetItems:[1,2,3,4],
   },
-
+  actionSheetChange:function(){
+    this.setData({
+      actionSheetHidden:true
+    })
+  },
+  click:function(){
+    this.setData({
+      actionSheetHidden: false
+    })
+  },
+  binditem:function(e){
+    // 输出被选中的项目
+    console.log(e.target.dataset.id);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -63,23 +76,5 @@ Page({
    */
   onShareAppMessage: function () {
     
-  },
-  userName:function(event){
-    this.setData({
-      userName:event.detail.value
-    })
-  },
-  userPassword:function(event){
-    this.setData({
-      userPassword: event.detail.value
-    })
-  },
-  loginBtnClick: function () {
-    // 用户名和密码验证的过程
-    app.myData.userInfo = {userName: this.data.userName, userPassword: this.data.passWord }
-    // 应该使用switchTab跳转，不应该使用navigateTo跳转
-    wx.switchTab({
-      url: "../user/user" ,
-    })
-  },
+  }
 })
