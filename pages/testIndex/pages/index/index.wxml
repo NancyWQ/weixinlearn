@@ -2,11 +2,13 @@
 <scroll-view scroll-y>
   <view>
     <view>
-      <swiper indicator-dots='{{true}}' autoplay='true' indicator-color='#fff' interval='{{3000}}'        
+      <swiper indicator-dots='{{true}}'
+      autoplay='true' indicator-color='#fff' interval='{{3000}}'        
       indicator-active-color='#ddd'>
         <block wx:for="{{imgUrls}}" wx:key="{{index}}">
           <swiper-item>
-            <image src="{{item}}" class="slide-image" width="355" height="150"></image>
+            <image src="{{item}}" class="slide-image" 
+            width="355" height="150"></image>
           </swiper-item>
         </block>
       </swiper>
@@ -18,7 +20,7 @@
       </view>
       <view class="content">
       <block wx:for="{{fine}}" wx:key="index">
-        <view class="contentItem">
+        <view class="contentItem" bindtap="jumpToDetail">
         <image src="{{item.url}}" 
         style="width:100%;height:100%;"></image>
         <text>{{item.title}}</text>
@@ -30,6 +32,18 @@
       <view class="flex header">
       <text>热门评测</text>
       <navigator url="../notFound/notFound">全部评测</navigator>
+      </view>
+      <view class="content">
+       <block wx:for="{{hot}}" wx:key="index">
+        <view class="contentItem2" bindtap="jumpToDetail">
+        <image src="{{item.url}}"></image>
+        <image src="{{item.avatar}}"></image>
+        <view>
+        <text>{{item.title}}</text>
+        <view>{{item.passage}}</view>
+        </view>
+        </view>
+        </block>
       </view>
     </view>
   </view>

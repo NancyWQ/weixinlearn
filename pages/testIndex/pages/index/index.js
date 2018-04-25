@@ -23,9 +23,39 @@ Page({
       }, {
         url: "../../images/img1.png",
         title: "这是商品标题"
-      }]
+      }],
+      hot:[
+        {
+          url:"../../images/img2.png",
+          avatar:"../../images/avatar.png",
+          title:"这是评测的标题",
+          passage:"这是评测的内容",
+        },
+        {
+          url: "../../images/img2.png",
+          avatar: "../../images/avatar.png",
+          title: "这是评测的标题",
+          passage: "这是评测的内容",
+        },
+        {
+          url: "../../images/img2.png",
+          avatar: "../../images/avatar.png",
+          title: "这是评测的标题",
+          passage: "这是评测的内容",
+        }, {
+          url: "../../images/img2.png",
+          avatar: "../../images/avatar.png",
+          title: "这是评测的标题",
+          passage: "这是评测的内容",
+        }
+      ]
   },
-
+// 跳转到详情页面
+  jumpToDetail:function(){
+    wx.navigateTo({
+      url: '../notFound/notFound',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

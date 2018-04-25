@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/api/api",
     "pages/testIndex/pages/index/index",
     "pages/testIndex/pages/notFound/notFound",
     "pages/index/index",

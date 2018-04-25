@@ -1,0 +1,36 @@
+<scroll-view scroll-y="{{true}}">
+<view>
+<text>请求api wx.request</text>
+<button type="primary" bindtap='request'>向后台请求数据</button>
+</view>
+<view>
+<text>图片选择api wx.chooseImage</text>
+<button type="primary" bindtap='chooseImage'>选择一张图片</button>
+<image src="{{imageSrc}}"></image>
+</view>
+<view>
+<text>音乐播放api</text>
+<button type="primary" bindtap='playVideo'>播放</button>
+<button type="primary" bindtap='pauseVideo'>暂停</button>
+<button type="primary" bindtap='getVideo'>获取状态</button>
+</view>
+<view>
+<text>数据缓存api</text>
+<button type="primary" bindtap="setInfo">创建数据缓存</button>
+<button type="primary" bindtap="getInfo">获取数据缓存</button>
+<button type="primary" bindtap="clearInfo">清除数据缓存</button>
+</view>
+<view>
+<text>地图相关api</text>
+<button type="primary" bindtap="getLocation">获取当前位置</button>
+</view>
+<view>
+<text>交互反馈的函数</text>
+<button type="primary" bindtap='toastExampleShow'>showtoast</button>
+<button type="primary" bindtap='toastExampleHide'>hidetoast</button>
+<button type="primary" bindtap='loadingExampleShow'>showLoading</button>
+<button type="primary" bindtap='loadingExampleHide'>hideLoading</button>
+<button type="primary" bindtap='modalExampleShow'>showModal</button>
+<button type="primary" bindtap='actionsheetExampleShow'>showActionSheet</button>
+</view>
+</scroll-view>
