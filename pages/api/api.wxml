@@ -33,4 +33,8 @@
 <button type="primary" bindtap='modalExampleShow'>showModal</button>
 <button type="primary" bindtap='actionsheetExampleShow'>showActionSheet</button>
 </view>
+<view>
+<text>动画</text>
+<image src="../testIndex/images/avatar.png" style='width:100px;height:100px;' bindtap='animation' animation="{{animationData}}"></image>
+</view>
 </scroll-view>

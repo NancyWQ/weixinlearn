@@ -6,6 +6,7 @@ Page({
   data: {
     imageSrc:null,
     scr:null,
+    animationData:{}
   },
   request:function(){
   wx.request({
@@ -141,6 +142,19 @@ Page({
         console.log("..cancel..");
       }
     })
+  },
+  animation:function(){
+    // 创建动画
+    var animation=wx.createAnimation({
+      transformOrigin: "50% 50%",
+      duration: 3000,
+      timingFunction: "ease",
+      delay: 0
+    })
+    // 设置动画动起来
+    animation.rotate(90).scale(2).step();
+    // 导出设置
+    this.setData({animationData:animation.export()});
   },
   /**
    * 生命周期函数--监听页面加载
