@@ -6,7 +6,7 @@ Page({
   data: {
     imageSrc:null,
     scr:null,
-    animationData:{}
+    animation:{}
   },
   request:function(){
   wx.request({
@@ -143,18 +143,22 @@ Page({
       }
     })
   },
-  animation:function(){
+  imageSrc:function(){
     // 创建动画
     var animation=wx.createAnimation({
       transformOrigin: "50% 50%",
-      duration: 3000,
+      duration: 1000,
       timingFunction: "ease",
       delay: 0
     })
-    // 设置动画动起来
-    animation.rotate(90).scale(2).step();
-    // 导出设置
-    this.setData({animationData:animation.export()});
+    // 设置动画
+    animation.rotate(90).step();
+    // 导出
+    var ease=animation.export();
+    // 设置赋值
+    this.setData({
+      animation:ease
+    })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -167,7 +171,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    // 获取画笔
+    var ctx=wx.createCanvasContext('firstCanvas');
+    // 画图
+    ctx.setFillStyle('yellow');
+    ctx.fillRect(10, 10, 150, 75);
+    //给值
+    ctx.draw();
   },
 
   /**

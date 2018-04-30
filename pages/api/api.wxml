@@ -34,7 +34,12 @@
 <button type="primary" bindtap='actionsheetExampleShow'>showActionSheet</button>
 </view>
 <view>
-<text>动画</text>
-<image src="../testIndex/images/avatar.png" style='width:100px;height:100px;' bindtap='animation' animation="{{animationData}}"></image>
+<text>donghua</text>
+<image src="../testIndex/images/avatar.png" style="width:100px;height:100px;" bindtap='imageSrc' animation='{{animation}}'></image>
+</view>
+<view>
+<text>绘图</text>
+<canvas canvas-id='firstCanvas'style="width:100%;height:200px; background-color:red">
+</canvas>
 </view>
 </scroll-view>
